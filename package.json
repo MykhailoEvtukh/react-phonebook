@@ -1,5 +1,5 @@
 {
-  "name": "goit-react-hw-03",
+  "name": "React-Phonebook-with-Redux",
   "version": "0.1.0",
   "private": false,
   "dependencies": {
@@ -23,7 +23,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://mykhailoevtukh.github.io/goit-react-hw-03-phonebook",
+  "homepage": "https://mykhailoevtukh.github.io/React-Phonebook-with-Redux",
   "eslintConfig": {
     "extends": "react-app"
   },
