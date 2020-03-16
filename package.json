@@ -1,5 +1,5 @@
 {
-  "name": "React-Phonebook-with-Redux",
+  "name": "react-phonebook",
   "version": "0.1.0",
   "private": false,
   "dependencies": {
@@ -23,7 +23,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://mykhailoevtukh.github.io/React-Phonebook-with-Redux",
+  "homepage": "https://MykhailoEvtukh.github.io/react-phonebook",
   "eslintConfig": {
     "extends": "react-app"
   },
