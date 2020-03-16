@@ -40,31 +40,33 @@ export default class Phonebook extends Component {
   render() {
     const { name, number } = this.state;
     return (
-      <>
-        <h2 className={css.h2}>Phonebook</h2>
-        <ContactForm
-          name={name}
-          number={number}
-          onHandleSubmit={this.onHandleSubmit}
-          onHandleGetValue={this.onHandleGetValue}
-        />
-        <h2 className={css.h2}>Contacts</h2>
-        <input
-          className={css.input}
-          onChange={this.props.search}
-          type="text"
-          placeholder="Find contact by name..."
-        />
-        {this.props.filter !== "" ? (
-          <Filter
-            data={this.props.data}
-            filter={this.props.filter}
-            delete={this.onHandleDelete}
+      <div className={css.wrapper}>
+        <div className={css.container}>
+          <h2 className={css.h2}>Phonebook</h2>
+          <ContactForm
+            name={name}
+            number={number}
+            onHandleSubmit={this.onHandleSubmit}
+            onHandleGetValue={this.onHandleGetValue}
           />
-        ) : (
-          <ContactList data={this.props.data} delete={this.onHandleDelete} />
-        )}
-      </>
+          <h2 className={css.h2}>Contacts</h2>
+          <input
+            className={css.input}
+            onChange={this.props.search}
+            type="text"
+            placeholder="Find contact by name..."
+          />
+          {this.props.filter !== "" ? (
+            <Filter
+              data={this.props.data}
+              filter={this.props.filter}
+              delete={this.onHandleDelete}
+            />
+          ) : (
+            <ContactList data={this.props.data} delete={this.onHandleDelete} />
+          )}
+        </div>
+      </div>
     );
   }
 }

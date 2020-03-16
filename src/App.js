@@ -56,15 +56,13 @@ class App extends Component {
 
   render() {
     return (
-      <div style={{ paddingLeft: 300 }}>
-        <Phonebook
-          getContact={this.getContact}
-          data={this.state.contacts}
-          filter={this.state.filter}
-          search={this.searchContact}
-          delete={this.deleteContact}
-        />
-      </div>
+      <Phonebook
+        getContact={this.getContact}
+        data={this.state.contacts}
+        filter={this.state.filter}
+        search={this.searchContact}
+        delete={this.deleteContact}
+      />
     );
   }
 }

@@ -1,35 +1,59 @@
 .form {
   display: flex;
   flex-direction: column;
-  max-width: 300px;
+  width: auto;
 }
 
 .input {
-  padding: 5px 10px;
-  width: 250px;
-  margin-bottom: 20px;
-  border: 1px solid rgba(0, 0, 0, 0.5);
-  border-radius: 8px;
-  background-color: rgba(158, 158, 158, 0.219);
+  display: block;
+  min-width: 230px;
+  color: rgb(238, 238, 238);
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  padding: 0.8rem 1.5rem;
+  background-color: transparent;
+  border: none;
+  border-radius: 1.8rem;
+  box-shadow: var(--shadow-inset);
+  outline: none;
+  margin-bottom: 25px;
+}
+
+.input:focus,
+.input:active {
+  box-shadow: var(--shadow-normal);
+}
+
+.input::placeholder {
+  font-family: "Montserrat", sans-serif;
+  color: rgb(238, 219, 241);
+  opacity: 0.5;
 }
 
 .addButton {
+  display: block;
   font-family: "Roboto", sans-serif;
-  font-size: 12px;
+  font-size: 1rem;
   font-weight: 600;
   text-transform: uppercase;
-  width: 100px;
-  height: 26px;
-  background-color: rgba(43, 43, 43, 0.322);
-  border-style: none;
-  border-radius: 10px;
-  color: rgb(31, 31, 31);
+  letter-spacing: 1.5px;
+  width: auto;
+  margin: auto;
+  background-color: transparent;
+  border: none;
+  border-radius: 1.8rem;
+  color: rgb(255, 255, 255);
   cursor: pointer;
   transition: 0.3s ease-out;
+  margin-bottom: 50px;
+  padding: 0.8rem 1.2rem;
+  outline: none;
+  box-shadow: var(--shadow-normal);
+  cursor: pointer;
 }
 
-.addButton:hover {
-  box-shadow: 0 4px 10px 0 rgba(85, 85, 85, 0.3);
-  background-color: rgb(71, 71, 71);
-  color: white;
+.addButton:hover,
+.addButton:focus {
+  box-shadow: var(--shadow-inset);
 }
